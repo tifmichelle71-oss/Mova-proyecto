@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - MOVA</title>
+    <link rel="stylesheet" href="lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mapa.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg mova-navbar">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html"><img src="img/Logo final.png" alt="Logo MOVA" class="mova-logo"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMova"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menuMova">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a></li>
+<li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+<li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+<li class="nav-item"><a class="nav-link active" href="mapa.html">Mapa</a></li>
+</ul>
+<a href="#" class="boton-login">Iniciar sesión</a>
+</div>
+</div>
+</nav>
+<div class="mapa-pantalla-completa">
+    <iframe src="https://openstreetmap.org" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+ <div class="tarjeta-busqueda-mapa">
+        <div class="busqueda-flex">
+            <span class="icono-origen">📍</span>
+            <div class="inputs-ruta-grupo">
+                <input type="text" class="input-ruta" placeholder="Mi ubicación actual" value="San José, Costa Rica">
+                <div class="linea-conectora-inputs"></div>
+                <input type="text" class="input-ruta" placeholder="¿A dónde vas?" value="Museo Nacional de Costa Rica">
+            </div>
+            <div class="iconos-busqueda-acciones">
+                <button class="btn-accion-mapa">🔍</button>
+                <button class="btn-accion-mapa text-danger">✕</button>
+            </div>
+        </div>
+    </div>
+
+  <!-- CONTENEDOR PRINCIPAL FLUIDO -->
+<div class="seccion-mapa-contenedor">
+
+    <!-- TARJETA SUPERIOR DE BÚSQUEDA -->
+    <div class="tarjeta-busqueda-mapa">
+        <div class="busqueda-flex">
+            <span class="icono-origen">📍</span>
+            <div class="inputs-ruta-grupo">
+                <input type="text" class="input-ruta" placeholder="Mi ubicación actual" value="San José, Costa Rica">
+                <div class="linea-conectora-inputs"></div>
+                <input type="text" class="input-ruta" placeholder="¿A dónde vas?" value="Museo Nacional de Costa Rica">
+            </div>
+            <div class="iconos-busqueda-acciones">
+                <button class="btn-accion-mapa">🔍</button>
+                <button class="btn-accion-mapa text-danger">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TARJETA INFERIOR DE RESUMEN DE RUTA -->
+    <div class="tarjeta-resumen-ruta">
+        <div class="resumen-flex">
+            <div class="transporte-opciones">
+                <button class="btn-transporte active" title="Vehículo">🚗</button>
+                <button class="btn-transporte" title="Autobús">🚌</button>
+                <button class="btn-transporte" title="Caminando">🚶</button>
+            </div>
+            <div class="divisor-resumen"></div>
+            <div class="info-tiempo-distancia">
+                <div class="item-meta-mapa"><span class="etiqueta-meta">Distancia:</span><span class="valor-meta">4.5 km</span></div>
+                <div class="item-meta-mapa"><span class="etiqueta-meta">Tiempo:</span><span class="valor-meta destacado">35 min</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAPA DE FONDO -->
+    <div class="mapa-pantalla-completa">
+        <iframe src="https://openstreetmap.org" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</div> <!-- FIN DEL CONTENEDOR DEL MAPA -->
+
+<!-- EL FOOTER QUEDA EXTENDIDO ABAJO DE TODO -->
+<footer class="mova-footer">
+    <div class="container-fluid px-4">
+        <div class="footer-flex-container">
+            <div class="footer-col-logo">
+                <img src="img/Logo final.png" alt="Logo MOVA" class="footer-logo">
+                <div class="linea-vertical"></div>
+            </div>
+            <div class="footer-col-links">
+                <div class="footer-links">
+                    <a href="quienessomos.html">¿Quiénes somos?</a>
+                    <span class="separador">|</span>
+                    <a href="blog.html">Blog</a>
+                    <span class="separador">|</span>
+                    <a href="contactenos.html">Contáctenos</a>
+                    <span class="separador">|</span>
+                    <a href="ayuda.html">Ayuda</a>
+                </div>
+            </div>
+            <div class="footer-col-contacto">
+                <ul class="footer-contacto">
+                    <li><span class="circulo-icono">✉</span><a href="mailto:destinoscr23@mova.com">destinoscr23@mova.com</a></li>
+                    <li><span class="circulo-icono">f</span><a href="#">Mova.cr.cl</a></li>
+                    <li><span class="circulo-icono">📷</span><a href="#">@Mova.cr</a></li>
+                    <li><span class="circulo-icono">📞</span><a href="tel:+50663185252">+506 6318-5252</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12"><p class="copyright">2026 © All Rights reserved</p></div>
+        </div>
+    </div>
+</footer>
