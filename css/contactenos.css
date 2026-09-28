@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif; 
+    background-color: white;
+    overflow-x: hidden;
+    margin: 0;
+}
+.mova-navbar {
+    position: absolute;
+    top: 15px;
+    left: 2%;
+    right: 2%;
+    height: 55px;
+    background-color: #1b25e0;
+    border-radius: 30px;
+    padding: 5px 8px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+.mova-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+}
+.mova-navbar .navbar-collapse {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.mova-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: auto;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mova-navbar .nav-item {
+    display: block;
+    list-style: none;
+}
+.mova-navbar .nav-link {
+    display: block;
+    color: white !important;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 8px 10px !important;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.mova-navbar .navbar-toggler {
+    display: none;
+}
+.mova-contenido {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 0;
+}
+.boton-login {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4edede;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+.boton-login:hover {
+    background-color: white;
+    color: #1b25e0;
+}
+.seccion-contacto-mova {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 94%;
+    margin: 140px auto 50px auto;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.contacto-col-izquierda {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+.contacto-col-centro {
+    flex: 0 0 auto !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+}
+.contacto-col-derecha {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.mancha-info-bg {
+    background-color: #4edede;
+    width: 330px;
+    height: 330px;
+    border-radius: 43% 57% 41% 59% / 57% 45% 55% 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(78, 222, 222, 0.15);
+}
+.info-contacto-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.info-contacto-lista li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+.circulo-icono-contacto {
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+.titulo-contacto {
+    font-size: 38px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    white-space: nowrap;
+}
+.formulario-tarjeta {
+    background-color: #4edede;
+    width: 310px;
+    border-radius: 40px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(78, 222, 222, 0.15);
+    box-sizing: border-box;
+}
+.avatar-formulario {
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+.input-mova, .textarea-mova {
+    background-color: #dbdbdb !important;
+    border: none !important;
+    border-radius: 15px !important;
+    font-size: 12px !important;
+    color: #333 !important;
+    padding: 10px 14px !important;
+    margin-bottom: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    outline: none;
+}
+.fila-inputs-dobles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-mova::placeholder, .textarea-mova::placeholder {
+    color: #666666;
+}
+.textarea-mova {
+    border-radius: 20px !important;
+    resize: none;
+    margin-bottom: 0 !important;
+}
+.mova-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    width: 100%;
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+.footer-flex-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+}
+.footer-col-logo {
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 300px !important;
+}
+.footer-logo {
+    width: 140px !important;
+    height: 140px !important;
+    object-fit: contain;
+}
+.linea-vertical {
+    width: 2px !important;
+    height: 110px !important;
+    background-color: #ffffff;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+.footer-col-links {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.footer-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-links .separador {
+    color: #ffffff;
+    opacity: 0.6;
+}
+.footer-col-contacto {
+    flex: 0 0 280px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.footer-contacto {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-contacto li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
+.footer-contacto a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.circulo-icono {
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.copyright {
+    font-size: 11px;
+    color: #888888;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
