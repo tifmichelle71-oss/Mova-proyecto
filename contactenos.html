@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - MOVA</title>
+    <link href="lib/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contactenos.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg mova-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo final.png" alt="Logo MOVA" class="mova-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMova" aria-controls="menuMova" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuMova">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactenos.html"  class="active">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+                <a href="#" class="boton-login">Iniciar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="seccion-contacto-mova">
+        <div class="contacto-col-izquierda">
+            <div class="mancha-info-bg">
+                <ul class="info-contacto-lista">
+                    <li>
+                        <span class="circulo-icono-contacto">📍</span>
+                        <span>San José, Costa Rica</span>
+                    </li>
+                    <li>
+                        <span class="circulo-icono-contacto">✉</span>
+                        <span>destinosfav21@mova.com</span>
+                    </li>
+                    <li>
+                        <span class="circulo-icono-contacto">📞</span>
+                        <span>+506 0000 0000</span>
+                    </li>
+                    <li>
+                        <span class="circulo-icono-contacto">📷</span>
+                        <span>MOVAapp</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contacto-col-centro">
+            <h1 class="titulo-contacto">Contáctenos</h1>
+        </div>
+
+        <div class="contacto-col-derecha">
+            <div class="formulario-tarjeta">
+                <div class="avatar-formulario">👤</div>
+                <form action="#" method="POST" style="width:100%;">
+                    <div class="mb-2">
+                        <label for="nombre" class="visually-hidden">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="input-mova" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="correo" class="visually-hidden">Correo</label>
+                        <input type="email" id="correo" name="correo" class="input-mova" placeholder="Correo" required>
+                    </div>
+                    <div class="fila-inputs-dobles mb-2">
+                        <div style="width:58%;">
+                            <label for="telefono" class="visually-hidden">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" class="input-mova" placeholder="Teléfono" style="width:100%;">
+                        </div>
+                        <div style="width:38%;">
+                            <label for="pais" class="visually-hidden">País</label>
+                            <input type="text" id="pais" name="pais" class="input-mova" placeholder="País" style="width:100%;">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="visually-hidden">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="textarea-mova" rows="3" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <div class="d-grid text-center">
+                        <button type="submit" class="btn btn-primary btn-sm btn-enviar-mova" style="background-color:#0d6efd;border:none;border-radius:20px;padding:6px 25px;">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mova-footer">
+        <div class="container-fluid px-4">
+            <div class="footer-flex-container">
+                <div class="footer-col-logo">
+                    <img src="img/Logo final.png" alt="Logo MOVA" class="footer-logo">
+                    <div class="linea-vertical"></div>
+                </div>
+                <div class="footer-col-links">
+                    <div class="footer-links">
+                        <a href="quienessomos.html">¿Quiénes somos?</a>
+                        <span class="separador">|</span>
+                        <a href="blog.html">Blog</a>
+                        <span class="separador">|</span>
+                        <a href="contactenos.html">Contáctenos</a>
+                        <span class="separador">|</span>
+                        <a href="ayuda.html">Ayuda</a>
+                    </div>
+                </div>
+                <div class="footer-col-contacto">
+                    <ul class="footer-contacto">
+                        <li>
+                            <span class="circulo-icono">✉</span>
+                            <a href="mailto:destinoscr23@mova.com">destinoscr23@mova.com</a>
+                        </li>
+                        <li>
+                            <span class="circulo-icono">f</span>
+                            <a href="#">Mova.cr.cl</a>
+                        </li>
+                        <li>
+                            <span class="circulo-icono">📷</span>
+                            <a href="#">@Mova.cr</a>
+                        </li>
+                        <li>
+                            <span class="circulo-icono">📞</span>
+                            <a href="tel:+50663185252">+506 6318-5252</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="copyright">2026 © All Rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
